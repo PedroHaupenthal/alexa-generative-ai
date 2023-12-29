@@ -1,0 +1,49 @@
+{
+    "manifest": {
+      "apis": {
+        "custom": {
+          "endpoint": {
+            "uri": "AWS_ARN"
+          },
+          "interfaces": [],
+          "locales": {},
+          "regions": {
+            "NA": {
+              "endpoint": {
+                "uri": "AWS_ARN"
+              }
+            },
+            "EU": {
+              "endpoint": {
+                "uri": "AWS_ARN"
+              }
+            },
+            "FE": {
+              "endpoint": {
+                "uri": "AWS_ARN"
+              }
+            }
+          }
+        }
+      },
+      "manifestVersion": "1.0",
+      "publishingInformation": {
+        "distributionCountries": [],
+        "isAvailableWorldwide": true,
+        "locales": {
+          "pt-BR": {
+            "description": "Sample Full Description",
+            "examplePhrases": [
+              "Alexa abra olá mundo",
+              "olá",
+              "ajuda"
+            ],
+            "keywords": [],
+            "name": "GenerativeAI",
+            "summary": "Sample Short Description"
+          }
+        },
+        "testingInstructions": "Sample Testing Instructions."
+      }
+    }
+  }
