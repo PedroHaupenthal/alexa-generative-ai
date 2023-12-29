@@ -1,2 +1,2 @@
-# Alexa skill using OpenAI GPT-3
-Alexa skill using OpenAI GPT-3
+# Alexa Skill using Generative AI
+Alexa Skill using Generative AI
