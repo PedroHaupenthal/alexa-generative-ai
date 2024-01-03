@@ -7,7 +7,8 @@ class OpenAiClient {
       baseURL: config.baseUrl,
       headers: {
         Authorization: 'Bearer ' + config.authKey
-      }
+      },
+      timeout: config.timeoutLimit
     })
   }
 
