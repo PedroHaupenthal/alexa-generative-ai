@@ -11,7 +11,7 @@ class OpenAiClient {
     })
   }
 
-  async getChatResponse(customInstruction, message) {
+  async getChatCompletions(customInstruction, message) {
     try {
       const body = {
         model: config.chatGpt.model,
@@ -21,13 +21,13 @@ class OpenAiClient {
       }
 
       const response = await this.client.post(
-        config.chatGpt.completationUrl,
+        config.chatGpt.completionUrl,
         body
       )
 
       return response.data
     } catch (error) {
-      console.error('OpenAiClient | getChatResponse Error:', error)
+      console.error('OpenAiClient | getChatCompletions Error:', error)
       throw new Error(error)
     }
   }

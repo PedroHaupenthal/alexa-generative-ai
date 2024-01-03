@@ -3,9 +3,9 @@ module.exports = {
         baseUrl: process.env.OPEN_AI_BASE_URL,
         authKey: process.env.OPEN_AI_API_KEY,
         chatGpt: {
-            completationUrl: '/chat/completions',
+            completionUrl: '/chat/completions',
             model: 'gpt-3.5-turbo',
-            maxTokens: 200,
+            maxTokens: 300,
             temperature: 0.5,
         }
     }
