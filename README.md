@@ -15,9 +15,9 @@ The goal is to create an interactive and intelligent experience, allowing users 
 2. **Implement the skill logic** that will process user inputs and interact with the Lambda function.
 
 ### Configuring AWS Lambda
-2. **Upload the code from this repository** to your Lambda function.
-3. **Set up Lambda Trigger and the Skill ID** to the Lambda function.
-4. **Copy the Lambda function's ARN** and set it as the endpoint for your Alexa Skill.
+1. **Upload the code from this repository** to your Lambda function.
+2. **Set up Lambda trigger** as Alexa/IoT and link your Skill ID.
+3. **Copy the Lambda function's ARN** and set it as the endpoint for your Alexa Skill.
 
 ### Integration with OpenAI API
 1. **Obtain an API key** from OpenAI.
@@ -25,3 +25,8 @@ The goal is to create an interactive and intelligent experience, allowing users 
 
 ## Testing and Deployment 🚀
 - Test the skill using the Alexa test console or an actual Alexa device.
+
+## Limitations and Warnings ⚠️
+- **Developer Mode**: This skill is only available in Developer mode, meaning it is not visible or accessible in the Skills Store and is only available for testing.
+- **Amazon Account**: If you intend to test with a physical Alexa device (e.g., Amazon Echo, Echo Dot, Echo Show), the email of the Amazon account must be the same as that of the Alexa Skills Kit.
+- **Conversation History**: The current version does not support conversation history.
