@@ -1,12 +1,12 @@
 const OpenAiClient = require('../services/openAiClient')
 const Message = require('../services/models/chatMessage')
 const Roles = require('../constants/roles')
-const ChatDefaultMessages = require('../constants/chatDefaultMessages')
+const { getLanguageMessage } = require('../utils/languageSelector')
 
 async function getChatResponse(userInput) {
   const customInstruction = new Message(
     Roles.system,
-    ChatDefaultMessages.customInstruction
+    getLanguageMessage().chatDefaultMessages.customInstruction
   )
   const userMessage = new Message(Roles.user, userInput)
 
@@ -27,7 +27,7 @@ async function getChatResponse(userInput) {
       console.error('Utils | getChatResponse No response: ', response)
 
       return {
-        message: ChatDefaultMessages.noResponseFound
+        message: getLanguageMessage().chatDefaultMessages.noResponseFound
       }
     }
 
@@ -35,7 +35,7 @@ async function getChatResponse(userInput) {
   } catch (error) {
     console.error('Utils | getChatResponse Error: ', error)
     return {
-      message: ChatDefaultMessages.errorResponse
+      message: getLanguageMessage().chatDefaultMessages.errorResponse
     }
   }
 }
