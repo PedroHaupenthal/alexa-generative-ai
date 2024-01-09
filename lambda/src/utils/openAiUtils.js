@@ -12,10 +12,10 @@ async function getChatResponse(userInput) {
 
   try {
     const client = new OpenAiClient()
-    const response = await client.getChatCompletions([
+    const response = await client.getChatCompletions(
       customInstruction,
       userMessage
-    ])
+    )
 
     if (
       !response ||
