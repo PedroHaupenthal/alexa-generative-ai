@@ -1,49 +1,75 @@
 {
-    "manifest": {
-      "apis": {
-        "custom": {
-          "endpoint": {
-            "uri": "AWS_ARN"
-          },
-          "interfaces": [],
-          "locales": {},
-          "regions": {
-            "NA": {
-              "endpoint": {
-                "uri": "AWS_ARN"
-              }
-            },
-            "EU": {
-              "endpoint": {
-                "uri": "AWS_ARN"
-              }
-            },
-            "FE": {
-              "endpoint": {
-                "uri": "AWS_ARN"
-              }
-            }
-          }
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "pt-BR": {
+          "summary": "YOUR_SUMMARY",
+          "examplePhrases": [
+            "YOUR_EXAMPLE_PHRASES",
+            "",
+            ""
+          ],
+          "keywords": [
+            "AI",
+            "Assistant",
+            "Voice",
+            "Interactive",
+            "Generative",
+            "AI",
+            "Information",
+            "Knowledge",
+            "Base",
+            "Educational",
+            "Tool",
+            "Question",
+            "and",
+            "Answer",
+            "Daily",
+            "Facts",
+            "Intelligent",
+            "Responses",
+            "Voice-Activated",
+            "Information",
+            "Learning",
+            "Assistant",
+            "Smart",
+            "Assistant",
+            "Interactive",
+            "Education",
+            "Artificial",
+            "Intelligence",
+            "Personal",
+            "AI"
+          ],
+          "name": "YOUR_SKILL_NAME",
+          "description": "YOUR_DESCRIPTION"
         }
       },
-      "manifestVersion": "1.0",
-      "publishingInformation": {
-        "distributionCountries": [],
-        "isAvailableWorldwide": true,
-        "locales": {
-          "pt-BR": {
-            "description": "Sample Full Description",
-            "examplePhrases": [
-              "Alexa abra olá mundo",
-              "olá",
-              "ajuda"
-            ],
-            "keywords": [],
-            "name": "GenerativeAI",
-            "summary": "Sample Short Description"
-          }
+      "automaticDistribution": {
+        "isActive": false
+      },
+      "isAvailableWorldwide": false,
+      "category": "EDUCATION_AND_REFERENCE",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "YOUR_AWS_ARN"
         },
-        "testingInstructions": "Sample Testing Instructions."
+        "interfaces": [],
+        "locales": {}
+      }
+    },
+    "manifestVersion": "1.0",
+    "privacyAndCompliance": {
+      "locales": {
+        "pt-BR": {}
+      },
+      "shoppingKit": {
+        "isShoppingActionsEnabled": false,
+        "isAmazonAssociatesOnAlexaEnabled": false
       }
     }
   }
+}

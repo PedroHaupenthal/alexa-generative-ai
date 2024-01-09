@@ -1,39 +1,48 @@
 {
-    "interactionModel": {
-      "languageModel": {
-        "intents": [
-          {
-            "name": "AMAZON.CancelIntent",
-            "samples": []
-          },
-          {
-            "name": "AMAZON.HelpIntent",
-            "samples": []
-          },
-          {
-            "name": "AMAZON.StopIntent",
-            "samples": []
-          },
-          {
-            "slots": [],
-            "name": "HelloWorldIntent",
-            "samples": [
-              "olá",
-              "como vai você",
-              "diga oi mundo",
-              "diga oi",
-              "oi",
-              "diga olá mundo",
-              "diga olá"
-            ]
-          },
-          {
-            "name": "AMAZON.NavigateHomeIntent",
-            "samples": []
-          }
-        ],
-        "types": [],
-        "invocationName": "Assistente Inteligente"
-      }
+  "interactionModel": {
+    "languageModel": {
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "slots": [
+            {
+              "name": "userInput",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "name": "CustomUserInputIntent",
+          "samples": [
+            "quem {userInput}",
+            "o que {userInput}",
+            "pode {userInput}",
+            "quais {userInput}",
+            "quanto {userInput}",
+            "qual {userInput}",
+            "por que {userInput}",
+            "como {userInput}",
+            "explique {userInput}",
+            "me {userInput}",
+            "diga {userInput}"
+          ]
+        }
+      ],
+      "types": [],
+      "invocationName": "assistente inteligente"
     }
   }
+}
