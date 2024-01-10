@@ -4,12 +4,16 @@
   "description": "Alexa Skill integrated with OpenAI for dynamic AI-generated user interactions",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "author": "PedroHaupenthal",
   "license": "Apache License",
   "dependencies": {
     "ask-sdk-core": "^2.7.0",
     "axios": "^1.6.3"
+  },
+  "devDependencies": {
+    "faker": "^5.5.3",
+    "jest": "^29.7.0"
   }
 }
