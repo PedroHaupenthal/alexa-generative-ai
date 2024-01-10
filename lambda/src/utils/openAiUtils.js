@@ -24,7 +24,7 @@ async function getChatResponse(userInput) {
       !response.choices[0].message ||
       !response.choices[0].message.content
     ) {
-      console.error('Utils | getChatResponse No response: ', response)
+      console.error('[Utils][getChatResponse] No response', response)
 
       return {
         message: getLanguageMessage().chatDefaultMessages.noResponseFound
@@ -33,7 +33,7 @@ async function getChatResponse(userInput) {
 
     return { message: response.choices[0].message.content }
   } catch (error) {
-    console.error('Utils | getChatResponse Error: ', error)
+    console.error('[Utils][getChatResponse] Error', error)
     return {
       message: getLanguageMessage().chatDefaultMessages.errorResponse
     }

@@ -101,7 +101,7 @@ const SessionEndedRequestHandler = {
   },
   handle(handlerInput) {
     console.log(
-      `Session ended: ${JSON.stringify(handlerInput.requestEnvelope)}`
+      `[SessionEnd]: ${JSON.stringify(handlerInput.requestEnvelope)}`
     )
     return handlerInput.responseBuilder.getResponse()
   }
