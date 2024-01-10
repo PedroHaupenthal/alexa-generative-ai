@@ -5,6 +5,14 @@ Node.js backend for an AWS Lambda function used by the "Generative AI" Alexa Ski
 
 The goal is to create an interactive and intelligent experience, allowing users to receive dynamic responses to a variety of questions and commands.
 
+## Architecture 🏗️
+Here is a simple diagram to illustrate the project's structure
+
+![Architectural Diagram](assets/architectural_diagram.png)
+- **Alexa Skill**: Skill that receives voice commands from users.
+- **AWS Lambda**: Lambda function that processes the received commands and interacts with the OpenAI API.
+- **OpenAI API**: API that generates responses using generative AI based on the sent conversation.
+
 ## Setup 🛠
 ### Prerequisites
 - AWS account with access to AWS Lambda and Alexa Skills Kit.
