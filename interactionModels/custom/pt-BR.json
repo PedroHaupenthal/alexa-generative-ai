@@ -1,0 +1,48 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "slots": [
+            {
+              "name": "userInput",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "name": "CustomUserInputIntent",
+          "samples": [
+            "quem {userInput}",
+            "o que {userInput}",
+            "pode {userInput}",
+            "quais {userInput}",
+            "quanto {userInput}",
+            "qual {userInput}",
+            "por que {userInput}",
+            "como {userInput}",
+            "explique {userInput}",
+            "me {userInput}",
+            "diga {userInput}"
+          ]
+        }
+      ],
+      "types": [],
+      "invocationName": "assistente inteligente"
+    }
+  }
+}
